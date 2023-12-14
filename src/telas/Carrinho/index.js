@@ -11,14 +11,14 @@ const servicos = [
     nome: "Banho",
     preco: 50.0,
     desc: "Banho morninho com shampoo Johnson's Baby suave!",
-    quantidade: 2
+    quantidade: 0
 },
 {
     id: 2,
     nome: "Ração Natural",
     preco: 10.0,
     desc: "Comida natural para seu bichinho, feita com muito amor!",
-    quantidade: 1
+    quantidade: 0
 },
 {
     id: 3,
