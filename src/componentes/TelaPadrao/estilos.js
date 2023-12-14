@@ -4,7 +4,7 @@ import { cores } from '../../estilos';
 export default StyleSheet.create({
   ajusteTela: {
     flex: 1,
-    backgroundColor: cores.roxo,
+    backgroundColor: cores.terracota,
   },
   ajusteTelaBaixo: {
     flex: 0,

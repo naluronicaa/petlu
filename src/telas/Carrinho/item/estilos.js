@@ -16,7 +16,7 @@ export default StyleSheet.create({
     marginVertical: 8,
   },
   preco: {
-    color: cores.roxo,
+    color: cores.terracota,
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'right',

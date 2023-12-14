@@ -11,14 +11,14 @@ const servicos = [
     nome: "Banho",
     preco: 50.0,
     desc: "Banho morninho com shampoo Johnson's Baby suave!",
-    quantidade: 1
+    quantidade: 2
 },
 {
     id: 2,
     nome: "Ração Natural",
     preco: 10.0,
     desc: "Comida natural para seu bichinho, feita com muito amor!",
-    quantidade: 4
+    quantidade: 1
 },
 {
     id: 3,
@@ -40,7 +40,7 @@ function Carrinho() {
   const total = servicos.reduce((soma, {preco, quantidade}) => soma + (preco * quantidade), 0);
 
   return <>
-    <StatusCarrinho total={total} />
+    <StatusCarrinho total={ total } />
     <FlatList
       data={servicos}
       renderItem={({item}) => <Item {...item}  />}

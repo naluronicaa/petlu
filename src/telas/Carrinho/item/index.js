@@ -7,7 +7,7 @@ import Botao from '../../../componentes/Botao';
 
 import estilos from './estilos';
 
-export default function Item({nome, preco, descricao, quantidade: quantidadeInicial}) {
+export default function Item({nome, preco, desc, quantidade: quantidadeInicial}) {
   const [quantidade, setQuantidade] = useState(quantidadeInicial);
   const [total, setTotal] = useState(preco * quantidadeInicial);
 
@@ -23,7 +23,7 @@ export default function Item({nome, preco, descricao, quantidade: quantidadeInic
   return <>
     <View style={estilos.informacao}>
       <Text style={estilos.nome}>{ nome }</Text>
-      <Text style={estilos.descricao}>{ descricao }</Text>
+      <Text style={estilos.desc}>{ desc }</Text>
       <Text style={estilos.preco}>{ 
         Intl.NumberFormat('pt-BR', {
           style: 'currency', currency: 'BRL'
@@ -33,11 +33,11 @@ export default function Item({nome, preco, descricao, quantidade: quantidadeInic
     <View style={estilos.carrinho}>
       <View>
         <View style={estilos.valor}>
-          <Text style={estilos.descricao}>Quantidade:</Text>
+          <Text style={estilos.desc}>Quantidade:</Text>
           <CampoInteiro estilos={estilos.quantidade} valor={quantidade} acao={atualizaQuantidadeTotal} />
         </View>
         <View style={estilos.valor}>
-          <Text style={estilos.descricao}>Total:</Text>
+          <Text style={estilos.desc}>Total:</Text>
           <Text style={estilos.preco}>{
             Intl.NumberFormat('pt-BR', {
               style: 'currency', currency: 'BRL'

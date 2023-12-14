@@ -3,7 +3,7 @@ import { cores } from '../../estilos';
 
 export default StyleSheet.create({
   conteudo: {
-    backgroundColor: cores.roxo,
+    backgroundColor: cores.terracota,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',

@@ -21,6 +21,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icone.png",
         "backgroundColor": "#100B19"
+      },
+      "androidNavigationBar": {
+        "visible": "sticky"
       }
     },
     "web": {
